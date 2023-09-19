@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background: url('https://photocasa.ru/uploads/posts/2017-01/1485218882_img_5932.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+}
+input,
+button {
+  font-family: "Raleway", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todoList {
+  margin-top: 48px;
+}
+.todoList h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+}
+.todoList form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 12px;
+}
+.todoList form input {
+  width: 600px;
+  padding: 10px 0 10px 6px;
+
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: #ffffffef;
+  transition: all 0.3s ease-in-out;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+.todoList form input:hover {
+  border: 2px solid #03cdf5;
+}
+.todoList form button {
+  width: 600px;
+  padding: 10px 0 10px 6px;
+
+  outline: none;
+  border: 2px solid #03cdf59f;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffffef;
+}
+.todoList form button:hover {
+  background-color: #fff;
+  color: #03cdf5;
+  border: 2px solid transparent;
+}
+.todoList .lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  margin-top: 24px;
+  gap: 20px;
+}
+.todoList .list {
+  width: 600px;
+  padding: 14px 0 14px 8px;
+
+  background-color: #fff;
+  border-radius: 8px;
+}
+.todoList .list p{
+    font-style: 16px;
+    font-weight: 500;
+}
+.todoList .list .actions{
+    margin-top: 8px;
+}
+.todoList .list .actions .done{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    padding: 8px;
+    background-color: #00bd109a;
+}
+.todoList .list .actions .done:hover{
+    background-color: #00bd1054;
+}
+.todoList .list .actions .remove{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    padding: 8px;
+    background-color: #ce0202a6;
+}
+.todoList .list .actions .remove:hover{
+    background-color: #ce020246;
+}
+.active{
+    border: 2px solid #00bd109a;
+}
+.doneActive{
+    display: none;
+}
+.option{
+    color: #fff;
+    font-style: 24px;
+    font-weight: 700;
+}
